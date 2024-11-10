@@ -6,14 +6,16 @@ const Navbar = () => {
   const currentPath = location.pathname;
   return (
     <>
-      <nav className="bg-white border-b border-gray-200">
-        <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-          <div className="font-bold text-xl">Kondapalli</div>
-          <div className="flex space-x-4">
+      <nav className="fixed h-[50px] w-full bg-white border-b border-gray-200 p-1">
+        <div className="contain5r mx-auto px-4 py-2 flex justify-center items-center space-x-20">
+          <div className="font-bold text-xl">
+            <Link to={"/"}>Kondapalli</Link>
+          </div>
+          <div className="hidden lg:flex space-x-16">
             <Link
               to={"/"}
-              className={`hover:underline ${
-                currentPath === "/" ? "underline" : ""
+              className={` hover:underline ${
+                currentPath === "/" ? "underline tracking-wide" : ""
               }`}
             >
               HOME
@@ -21,7 +23,7 @@ const Navbar = () => {
             <Link
               to={"/about"}
               className={`hover:underline ${
-                currentPath === "/about" ? "underline" : ""
+                currentPath === "/about" ? "underline tracking-wide" : ""
               }`}
             >
               About
@@ -29,7 +31,7 @@ const Navbar = () => {
             <Link
               to={"/contact"}
               className={`hover:underline ${
-                currentPath === "/contact" ? "underline" : ""
+                currentPath === "/contact" ? "underline tracking-wide" : ""
               }`}
             >
               Contact Us
