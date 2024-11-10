@@ -25,12 +25,14 @@ const HomePage = () => {
           <div className="text-center mb-8">
             <div className="grid grid-rows-3">
               <div className="h-[2px] w-[50px] bg-black"></div>
-              <div className="text-2xl lg:text-3xl mb-2 lg:mb-4">COMING SOON</div>
+              <div className="text-2xl lg:text-3xl mb-2 lg:mb-2">
+                COMING SOON
+              </div>
               <div className="h-[2px] w-[50px] bg-black"></div>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:mt-20 font-bold">
-              Get Notified When We Launch
+            <h1 className="text-5xl md:text-6xl lg:mt-5 font-bold">
+              Get {} Notified When We Launch
             </h1>
             <div className="p-6 mt-5">
               <form onSubmit={handleSubmit}>
@@ -43,7 +45,7 @@ const HomePage = () => {
                 />
                 <button
                   type="submit"
-                  className="absolute ml-[-115px] mt-[4.5px] bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full"
+                  className="absolute z-10 ml-[-115px] mt-[4.5px] bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full"
                 >
                   Notify Me
                 </button>
@@ -65,9 +67,8 @@ const HomePage = () => {
             Experience the Magic of Handmade Artistry
           </p>
         </div>
+        <Footer />
       </div>
-
-      <Footer />
     </>
   );
 };
