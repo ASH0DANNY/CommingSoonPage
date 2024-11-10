@@ -1,40 +1,53 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+const toyImage =
+  "https://s3-alpha-sig.figma.com/img/98ec/022a/d847d570bc347d7efbac5703c9b828f8?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WoBaUDX6Ym8Xl19wu2yrgfjShyp92BbtRBTLHZaTTWOcB2c03iUwBXMC1hUCZ2qLh3GMIk2rvEv1c9DhPELyPIWJBEv0nCLMUT5704RSCsT6tXeZUs7CK3ZhLF~00DPQcfT-Qypq1-lB3KeUCDstq8BBNWyns-jAswNu43VCSqe3yQ~DP~E3rPrSY6WaJ7xWeBZZ1DR77jzvMDPeZC-gZ5ayAlqug7HOOAZpP21MklVm5E1PWFFGWUtl-N1klUmeozfocAEPo2naOxzZ0jsd3lPm0S2uej~~RMg1NpSN3qk-16db6e1idFg6mHocqg9hO6n8C6uiQeHWuhGVFmvl8w__";
 
 const HomePage = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here, e.g., send email to backend
+
     console.log("Email:", email);
-    setEmail(""); // Clear the email input after submission
+    setEmail("");
   };
 
   return (
     <>
-      <Navbar />
-      <div className="bg-primary pt-[50px] min-h-screen grid grid-cols-1 lg:grid-cols-3 items-center">
-        <div className="hidden lg:block p-2 -rotate-90">
-          <p className="text-sm text-gray-500 text-right">
+        <Navbar />
+      <div className="bg-primary pt-[50px] min-h-screen flex flex-row">
+        <div className="hidden w-[20%] lg:inline-flex p-2">
+          <p className="absolute text-sm text-gray-500 top-[210px] left-[50px] -rotate-90">
             Embrace the heritage of Kondapalli
           </p>
         </div>
-        <div className="max-w-md w-full">
-          <div className="text-center mb-8">
-            <div className="grid grid-rows-3">
+        <div className="w-[60%] flex justify-center items-center">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center space-x-3">
               <div className="h-[2px] w-[50px] bg-black"></div>
-              <div className="text-2xl lg:text-3xl mb-2 lg:mb-2">
+              <div className="text-2xl lg:text-2xl mb-1 lg:mb-2">
                 COMING SOON
               </div>
               <div className="h-[2px] w-[50px] bg-black"></div>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:mt-5 font-bold">
-              Get {} Notified When We Launch
+            <h1 className="font-syne w-[80%] mt-28">
+              <span className="text-5xl font-bold md:text-[64px] lg:mt-32 pr-[120px]">
+                Get
+              </span>
+              <span>
+                <img
+                  src={toyImage}
+                  className="absolute w-[152.98px] h-[248.59px] top-[104px] left-[540px] rotate-[11.75deg]"
+                />
+              </span>
+              <span className="text-5xl font-bold md:text-[64px] lg:mt-32">
+                Notified When We Launch
+              </span>
             </h1>
-            <div className="p-6 mt-5">
+            <div className="w-2/3 p-6 mt-5">
               <form onSubmit={handleSubmit}>
                 <input
                   type="email"
@@ -51,9 +64,9 @@ const HomePage = () => {
                 </button>
               </form>
             </div>
-            <div className="mt-5">
+            <div className="mt-1">
               <p className="text-xs lg:text-sm">
-                We're currently working on creating something fantastic{" "}
+                We're currently working on creating something fantastic
               </p>
               <p className="text-xs lg:text-sm">
                 We'll be here soon, subscribe to be notified
@@ -61,9 +74,9 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="lg:block hidden p-2 rotate-90">
-          <span className="text-sm text-gray-500">@2024</span>
-          <p className="text-sm text-gray-500 text-right">
+        <div className="lg:block w-[20%] hidden p-2 ">
+          <p className="text-sm text-gray-500 text-center">@2024 </p>
+          <p className="absolute top-[480px] text-sm text-gray-500 text-right rotate-90">
             Experience the Magic of Handmade Artistry
           </p>
         </div>
