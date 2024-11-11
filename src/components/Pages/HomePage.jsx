@@ -44,20 +44,6 @@ const HomePage = () => {
               <div className="h-[2px] w-[50px] bg-black"></div>
             </div>
 
-            {/* <h1 className="font-syne w-[80%] mt-28">
-              <span className="text-5xl font-bold md:text-[64px] lg:mt-32 pr-[120px]">
-                Get
-              </span>
-              <span>
-                <img
-                  src={toyImage}
-                  className="absolute w-[152.98px] h-[248.59px] top-[104px] left-[540px] rotate-[11.75deg]"
-                />
-              </span>
-              <span className="text-5xl font-bold md:text-[64px] lg:mt-32">
-                Notified When We Launch
-              </span>
-            </h1> */}
             <div className="flex flex-col justify-center items-center">
               <div className="font-syne w-full lg:w-[80%] mt-8 lg:mt-28 flex items-center justify-center">
                 <p className="text-5xl font-bold md:text-[64px]">
