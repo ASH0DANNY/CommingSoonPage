@@ -5,12 +5,12 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
     <>
-      <div className="absolute bottom-0 bg-primary text-gray-500 w-full flex flex-col-reverse lg:grid lg:grid-cols-3 p-4 justify-items-center">
+      <div className="absolute bottom-0 bg-primary text-gray-500 w-full flex flex-col-reverse lg:grid lg:grid-cols-3 p-3 justify-items-center">
         <div className="hidden lg:block"></div>
         <div className="w-full flex flex-col items-center justify-center">
           <p>
             <span className="hidden lg:inline-block text-xs">Website by</span>
-            <span className="text-xs mx-2">Kandapalli</span>
+            <span className="text-xs mx-2">Maoorubomma</span>
           </p>
           <p className="text-xs">&copy;2024 "All Roght Reserved" </p>
         </div>
