@@ -47,7 +47,7 @@ const HomePage = () => {
             <div className="flex flex-col justify-center items-center">
               <div className="font-syne w-full lg:w-[80%] mt-8 lg:mt-28 flex items-center justify-center">
                 <p className="text-5xl font-bold md:text-[64px]">
-                <img
+                  <img
                     src={toyImage2}
                     alt="toy_image"
                     className="absolute lg:hidden w-[41px] h-[67px] top-[120px] left-[82px] rotate-[-11.75deg]"
