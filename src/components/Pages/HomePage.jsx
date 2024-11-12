@@ -22,7 +22,7 @@ const HomePage = () => {
       <div className="bg-primary pt-[50px] min-h-screen flex flex-row">
         <div className="hidden w-[20%] lg:inline-flex p-2">
           <p className="absolute text-sm text-gray-500 top-[210px] left-[50px] -rotate-90">
-            Embrace the heritage of Kondapalli
+            Embrace the heritage of Maoorubomma
           </p>
         </div>
         <div className="w-full lg:w-[60%] lg:flex justify-center items-center">
