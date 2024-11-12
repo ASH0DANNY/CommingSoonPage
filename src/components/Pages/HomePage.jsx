@@ -47,12 +47,11 @@ const HomePage = () => {
             <div className="flex flex-col justify-center items-center">
               <div className="font-syne w-full lg:w-[80%] mt-8 lg:mt-16 flex items-center ">
                 <p className="text-5xl font-bold md:text-[64px]">
-                <img
+                  <img
                     src={toyImage2}
                     alt="toy_image"
                     className="inline-block lg:hidden mt-[-30px] w-[41px] h-[67px] rotate-[-11.75deg]"
                   />
-                  {/* <span className="pl-10 pr-10 lg:pl-0 lg:pr-40">Get</span> */}
                   Get{" "}
                   <img
                     src={toyImage1}
