@@ -19,20 +19,20 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-primary pt-[50px] min-h-screen flex flex-row">
+      <div className="bg-primary pt-[50px] min-h-screen flex flex-row overflow-hidden">
         <div className="hidden w-[20%] lg:inline-flex p-2">
           <p className="absolute text-sm text-gray-500 top-[210px] left-[50px] -rotate-90">
-            Embrace the heritage of Kondapalli
+            Embrace the heritage of Maoorubomma
           </p>
         </div>
-        <div className="w-full lg:w-[60%] lg:flex justify-center items-center">
+        <div className="w-full lg:flex justify-center items-center relative ">
           <div
             id="Ellipse27"
-            className="absolute bg-ellipse27 blur-xl h-[326px] w-[326px] z-30 -left-[170px] bottom-[30px] rounded-full"
+            className="absolute bg-ellipse27 blur-3xl h-[326px] w-[326px] z-30 left-[100px] lg:-left-[300px] bottom-[30px] rounded-full"
           ></div>
           <div
             id="Ellipse28"
-            className="absolute bg-ellipse28 blur-3xl h-[326px] w-[326px] z-30 -right-[180px] top-[40px] rounded-full"
+            className="absolute bg-ellipse28 blur-3xl h-[326px] w-[326px] z-30 -right-[100px] lg:-right-[300px] top-[40px] rounded-full"
           ></div>
 
           <div className="text-center mt-5 lg:mt-1 mb-2 lg:mb-16">
@@ -97,6 +97,7 @@ const HomePage = () => {
         </div>
         <Footer />
       </div>
+
     </>
   );
 };
