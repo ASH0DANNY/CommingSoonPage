@@ -45,19 +45,19 @@ const HomePage = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center">
-              <div className="font-syne w-full lg:w-[80%] mt-8 lg:mt-28 flex items-center justify-center">
+              <div className="font-syne w-full lg:w-[80%] mt-8 lg:mt-16 flex items-center ">
                 <p className="text-5xl font-bold md:text-[64px]">
                   <img
                     src={toyImage2}
                     alt="toy_image"
-                    className="absolute lg:hidden w-[41px] h-[67px] top-[120px] left-[82px] rotate-[-11.75deg]"
+                    className="inline-block lg:hidden mt-[-30px] w-[41px] h-[67px] rotate-[-11.75deg]"
                   />
-                  <span className="pl-10 pr-10 lg:pl-0 lg:pr-40">Get</span>
+                  Get{" "}
                   <img
                     src={toyImage1}
                     alt="toy_image"
-                    className="absolute w-[41px] lg:w-[152.98px] h-[67px] lg:h-[240.59px] top-[120px] left-[240px] lg:top-[114px] lg:left-[540px] rotate-[11.75deg]"
-                  />{" "}
+                    className="inline-block mx-1 pt-0 lg:pt-[60px] mt-[-30px] lg:mt-[-160px] w-[41px] lg:w-[152.98px] h-[67px] lg:h-[240.59px] rotate-[11.75deg]"
+                  />
                   Notified When We Launch
                 </p>
               </div>
