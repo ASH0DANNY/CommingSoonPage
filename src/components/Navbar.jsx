@@ -49,7 +49,7 @@ const Navbar = () => {
           </div>
           <div className="text-xl w-[35%]">
             {/* <Link to={"/"}>Kondapalli</Link> */}
-            <Link to={"/"} className="font-syne font-bold">Maoorubomma</Link>
+            <Link to={"/"} className="font-mono font-bold">Maoorubomma.com</Link>
           </div>
 
           <div className="hidden lg:flex space-x-16 w-[65%]">
